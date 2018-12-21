@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @Transactional
-public class ProductDetailController {
-	@RequestMapping(value = { "/product_details.html" }, method = RequestMethod.GET)
+public class ProductsController {
+	@RequestMapping(value = { "/products.html", "/{a}/{id}" }, method = RequestMethod.GET)
     public String index(Model model) {
-        return "client/product_details";
+        return "/client/products";
     }
   
  
