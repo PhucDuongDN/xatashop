@@ -24,7 +24,7 @@ public class SearchProductsController {
 		return "redirect:/search/q=" + request.getParameter("srchFld");
 	}
 	@RequestMapping(value = { "/search/q={srchFld}" }, method = RequestMethod.GET)
-	public String search(@PathVariable("srchFld") String srchFld, Model model) {
+	public String searchResult(@PathVariable("srchFld") String srchFld, Model model) {
 
 		return "client/products";
 	}
